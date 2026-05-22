@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Latarka</string>
+    <string name="config_title">Flashlight Configuration</string>
+    <string name="service_enabled">Service Enabled</string>
+    <string name="gforce_threshold">G-Force Threshold: %.1f g</string>
+    <string name="slop_delay">Slop Delay: %d ms</string>
+    <string name="shake_count">Shake Count: %d</string>
+    <string name="notification_channel_name">Shake Detection Service</string>
+    <string name="notification_title">Shake Detection Active</string>
+    <string name="notification_text">Listening for shakes to toggle flashlight</string>
+    <string name="fgs_explanation">This service listens to the accelerometer to toggle the flashlight when the user shakes the device, even when the screen is off.</string>
+    <string name="service_enabled_desc">Keep the background service running to detect shakes even when the app is closed.</string>
+    <string name="slider_snapping">Slider Snapping</string>
+    <string name="slider_snapping_desc">Round slider values to the nearest logical step for easier adjustment.</string>
+    <string name="drop_prevention">Drop Prevention</string>
+    <string name="drop_prevention_desc">Temporarily disable shake detection if a free-fall is detected to avoid accidental activation.</string>
+    <string name="manual_entry_mode">Manual Entry Mode</string>
+    <string name="manual_entry_mode_desc">Toggle between using sliders or typing numbers for configuration.</string>
+    <string name="snapping_step_g">Snapping Step (G): %.2f</string>
+    <string name="snapping_step_ms">Snapping Step (ms): %d</string>
+    <string name="snapping_step_desc">Adjust the granularity of slider movements when snapping is enabled.</string>
+    <string name="cooldown_duration">Cooldown Duration: %d ms</string>
+    <string name="reset_timeout">Reset Timeout: %d ms</string>
+    <string name="permissions_required">Permissions Required</string>
+    <string name="permissions_required_desc">This app requires Camera and Notification permissions to work correctly. Without them, the flashlight cannot be controlled and the background service cannot show a notification.</string>
+    <string name="grant_permissions">Grant Permissions</string>
+    <string name="camera_permission_denied">Camera permission is required for the flashlight.</string>
+    <string name="notification_permission_denied">Notification permission is required for the background service.</string>
+    <string name="menu_options">Options</string>
+    <string name="edit_value">Edit Value</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+</resources>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Latarka</string>
+    <string name="config_title">Konfiguracja latarki</string>
+    <string name="service_enabled">Usługa włączona</string>
+    <string name="gforce_threshold">Próg przeciążenia (G): %.1f g</string>
+    <string name="slop_delay">Opóźnienie (Slop): %d ms</string>
+    <string name="shake_count">Liczba potrząśnięć: %d</string>
+    <string name="notification_channel_name">Usługa wykrywania potrząśnięć</string>
+    <string name="notification_title">Wykrywanie potrząśnięć aktywne</string>
+    <string name="notification_text">Oczekiwanie na potrząśnięcie, aby przełączyć latarkę</string>
+    <string name="fgs_explanation">Ta usługa nasłuchuje akcelerometru, aby przełączyć latarkę, gdy użytkownik potrząśnie urządzeniem, nawet przy wyłączonym ekranie.</string>
+    <string name="service_enabled_desc">Utrzymuj usługę w tle, aby wykrywać potrząśnięcia nawet po zamknięciu aplikacji.</string>
+    <string name="slider_snapping">Przyciąganie suwaka</string>
+    <string name="slider_snapping_desc">Zaokrąglaj wartości suwaka do najbliższego logicznego kroku dla łatwiejszej regulacji.</string>
+    <string name="drop_prevention">Ochrona przed upadkiem</string>
+    <string name="drop_prevention_desc">Tymczasowo wyłącz wykrywanie potrząśnięć, jeśli wykryto upadek, aby uniknąć przypadkowej aktywacji.</string>
+    <string name="manual_entry_mode">Tryb wpisywania ręcznego</string>
+    <string name="manual_entry_mode_desc">Przełączaj między używaniem suwaków a wpisywaniem liczb w konfiguracji.</string>
+    <string name="snapping_step_g">Krok przyciągania (G): %.2f</string>
+    <string name="snapping_step_ms">Krok przyciągania (ms): %d</string>
+    <string name="snapping_step_desc">Dostosuj szczegółowość ruchów suwaka, gdy przyciąganie jest włączone.</string>
+    <string name="cooldown_duration">Czas schłodzenia: %d ms</string>
+    <string name="reset_timeout">Limit czasu resetowania: %d ms</string>
+    <string name="permissions_required">Wymagane uprawnienia</string>
+    <string name="permissions_required_desc">Ta aplikacja wymaga uprawnień do aparatu i powiadomień do poprawnego działania. Bez nich nie można kontrolować latarki, a usługa w tle nie może wyświetlać powiadomień.</string>
+    <string name="grant_permissions">Przyznaj uprawnienia</string>
+    <string name="camera_permission_denied">Uprawnienie do aparatu jest wymagane dla latarki.</string>
+    <string name="notification_permission_denied">Uprawnienie do powiadomień jest wymagane dla usługi w tle.</string>
+    <string name="menu_options">Opcje</string>
+    <string name="edit_value">Edytuj wartość</string>
+    <string name="cancel">Anuluj</string>
+    <string name="save">Zapisz</string>
+</resources>

@@ -1,0 +1,37 @@
+name: Android Build
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    name: Build APK
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Pobranie kodu (Checkout)
+        uses: actions/checkout@v4
+
+      - name: Konfiguracja Java JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      - name: Konfiguracja Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Nadanie uprawnień do skryptu gradlew
+        run: chmod +x gradlew
+
+      - name: Budowanie aplikacji (Debug & Release APK)
+        run: ./gradlew assembleDebug assembleRelease
+
+      - name: Udostępnienie pliku APK (Artifact)
+        uses: actions/upload-artifact@v4
+        with:
+          name: aplikacja-latarka
+          path: app/build/outputs/apk/debug/*.apk
