@@ -6,14 +6,12 @@ A native Android application to toggle the device's flashlight using a shake ges
 
 ## 🌍 Language / Język
 Choose your preferred language documentation below:
-* [English Documentation (#english)](#english)
-* [Polska Dokumentacja (#polish)](#polish)
+* [English Documentation](#english)
+* [Polska Dokumentacja](#polska-dokumentacja)
 
 ---
 
-<div id="english"></div>
-
-## 🇬🇧 English Documentation
+## English
 
 ### Features
 * **Gesture Control:** Toggle the flashlight on and off by shaking the phone (Motorola-style chop-chop gesture).
