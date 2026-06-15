@@ -1,0 +1,6 @@
+Natywna aplikacja na system Android służąca do włączania i wyłączania latarki za pomocą gestu potrząśnięcia, wzorowana na klasycznej funkcji „chop-chop” znanej z telefonów Motorola.
+
+Funkcje:
+* Sterowanie gestem: Włączanie i wyłączanie latarki poprzez energiczne potrząśnięcie telefonem (funkcjonalność wzorowana na geście „chop-chop” z telefonów Motorola).
+* Praca w tle: Aplikacja działa nieprzerwanie w tle dzięki zastosowaniu usługi systemowej typu Foreground Service.
+* Standardy Open-Source: Pełne poszanowanie prywatności — brak skryptów śledzących, analityki oraz reklam (w pełni gotowe pod wymogi F-Droid).

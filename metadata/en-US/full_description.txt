@@ -1,0 +1,7 @@
+A native Android application to toggle the device's flashlight using a shake gesture,
+mimicking the classic Motorola "chop-chop" feature.
+
+Features:
+* Gesture Control: Toggle the flashlight on/off by shaking the phone (Motorola-style chop-chop gesture).
+* Background Service: Runs efficiently in the background via a dedicated foreground Android Service.
+* F-Droid Ready: Strictly respects user privacy—contains zero trackers, zero analytics, and zero advertisements.
