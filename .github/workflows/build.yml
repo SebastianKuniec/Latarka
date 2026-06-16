@@ -41,19 +41,14 @@ jobs:
         run: echo "$KEYSTORE_BASE64" | base64 --decode > keystore.jks
 
       - name: Build release APK
-        env:
-          KEYSTORE_PATH: ${{ github.workspace }}/keystore.jks
-          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
-          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
-          STORE_PASSWORD: ${{ secrets.STORE_PASSWORD }}
         run: |
           if [ -f keystore.jks ]; then
             echo "Signing keystore found. Building signed Release APK..."
             ./gradlew :app:assembleRelease \
-              -Pandroid.injected.signing.store.file="$KEYSTORE_PATH" \
-              -Pandroid.injected.signing.store.password="$STORE_PASSWORD" \
-              -Pandroid.injected.signing.key.alias="$KEY_ALIAS" \
-              -Pandroid.injected.signing.key.password="$KEY_PASSWORD"
+              -Pandroid.injected.signing.store.file="${{ github.workspace }}/keystore.jks" \
+              -Pandroid.injected.signing.store.password='${{ secrets.STORE_PASSWORD }}' \
+              -Pandroid.injected.signing.key.alias='${{ secrets.KEY_ALIAS }}' \
+              -Pandroid.injected.signing.key.password='${{ secrets.KEY_PASSWORD }}'
           else
             echo "Signing keystore not found. Building unsigned Release APK..."
             ./gradlew :app:assembleRelease
